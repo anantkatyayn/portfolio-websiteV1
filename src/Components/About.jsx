@@ -1,0 +1,220 @@
+import React from "react";
+import CV from "../assets/AnantKatyaynResume.pdf";
+
+const About = () => {
+  return (
+    <section className="relative bg-[#e1e1e1] z-20 -mt-2 pt-[72px] lg:pt-[96px] pb-20 flex items-center lg:h-auto overflow-hidden">
+      {/* Subtle Moving Outlined Elements */}
+      <div className="absolute left-10 top-10 animate-random-motion">
+        <div className="w-8 h-8 border-2 border-white rounded-full"></div>{" "}
+        {/* Circle */}
+      </div>
+      <div className="absolute right-20 top-16 animate-random-motion">
+        <div className="w-6 h-6 border-2 border-white transform rotate-45"></div>{" "}
+        {/* Diamond */}
+      </div>
+      <div className="absolute left-20 bottom-10 animate-random-motion">
+        <div className="w-8 h-8 border-2 border-white transform rotate-45"></div>{" "}
+        {/* Triangle */}
+      </div>
+      <div className="absolute right-10 bottom-20 animate-random-motion">
+        <div className="w-6 h-6 border-2 border-white flex items-center justify-center">
+          <span className="text-white text-sm font-bold transform rotate-45">
+            +
+          </span>{" "}
+          {/* Plus */}
+        </div>
+      </div>
+      <div className="absolute left-[40%] top-[20%] animate-random-motion">
+        <div className="w-5 h-5 border-2 border-white rounded-full"></div>{" "}
+        {/* Small Circle */}
+      </div>
+      <div className="absolute right-[30%] top-[30%] animate-random-motion">
+        <div className="w-7 h-7 border-2 border-white"></div> {/* Square */}
+      </div>
+      <div className="absolute left-[10%] top-[50%] animate-random-motion">
+        <div className="w-6 h-6 border-2 border-white transform rotate-45"></div>{" "}
+        {/* Diamond */}
+      </div>
+      <div className="absolute right-[10%] bottom-[40%] animate-random-motion">
+        <div className="w-5 h-5 border-2 border-white rounded-full"></div>{" "}
+        {/* Circle */}
+      </div>
+
+      <div className="container mx-auto px-6 lg:px-[240px] z-20 py-16 flex flex-col gap-12">
+        {/* First Row: Why Hire Me and My Skills */}
+        <div className="flex flex-col lg:flex-row justify-between gap-12 items-center">
+          {/* Left Section: Why Hire Me */}
+          <div className="lg:w-1/2 md:w-3/4 text-center lg:text-left">
+            <h2 className="font-raleway text-3xl font-bold mb-4">
+              Why Hire Me?
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-6 max-w-lg mx-auto lg:mx-0">
+              I am a creative problem solver with expertise in design,
+              development, and branding. With a proven ability to deliver
+              engaging and impactful solutions, I ensure your brand stands out
+              and connects with your audience.
+            </p>
+            <div className="flex justify-center lg:justify-start gap-4">
+              <button className="bg-black text-white px-6 py-3 hover:bg-gray-800 transition">
+                HIRE ME
+              </button>
+              <a href={CV} download>
+                <button className="text-black px-6 py-3 transition">
+                  Download CV
+                </button>
+              </a>
+            </div>
+          </div>
+
+          {/* Right Section: My Skills */}
+          <div className="lg:w-1/2 md:w-3/4 sm:w-3/4 text-center lg:text-left">
+            <h2 className="font-raleway text-3xl font-bold mb-4">Services</h2>
+            <div className="space-y-6">
+              {/* Skill 1 */}
+              <div>
+                <div className="flex justify-between">
+                  <span className="text-gray-700">UX Design</span>
+                  <span className="text-gray-700">92%</span>
+                </div>
+                <div className="bg-gray-300 h-2 rounded-full mt-2">
+                  <div className="bg-[#2d2d2d] h-full rounded-full w-[92%]"></div>
+                </div>
+              </div>
+              {/* Skill 2 */}
+              <div>
+                <div className="flex justify-between">
+                  <span className="text-gray-700">Brand Identity Design</span>
+                  <span className="text-gray-700">92%</span>
+                </div>
+                <div className="bg-gray-300 h-2 rounded-full mt-2">
+                  <div className="bg-[#2d2d2d] h-full rounded-full w-[92%]"></div>
+                </div>
+              </div>
+              {/* Skill 3 */}
+              <div>
+                <div className="flex justify-between">
+                  <span className="text-gray-700">FrontEnd Development</span>
+                  <span className="text-gray-700">85%</span>
+                </div>
+                <div className="bg-gray-300 h-2 rounded-full mt-2">
+                  <div className="bg-[#2d2d2d] h-full rounded-full w-[85%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Second Row: Tech Stack */}
+        <div className="flex flex-col gap-6">
+          <h2 className="text-3xl font-bold text-center lg:text-left mb-4">
+            My Tech Stack
+          </h2>
+          <div className="space-y-4 ">
+            {/* Row 1 */}
+            <div className="flex flex-wrap justify-evenly lg:justify-between items-center gap-4 ">
+              <div className="flex items-center gap-2 w-1/2 sm:w-auto">
+                <img
+                  src="../src/assets/HTML.svg"
+                  alt="HTML5"
+                  className="w-6 h-6"
+                />
+                <span>HTML</span>
+              </div>
+              <div className="flex items-center gap-2 w-1/2 sm:w-auto">
+                <img
+                  src="../src/assets/css.svg"
+                  alt="CSS3"
+                  className="w-6 h-6"
+                />
+                <span>CSS</span>
+              </div>
+              <div className="flex items-center gap-2 w-1/2 sm:w-auto">
+                <img
+                  src="../src/assets/javascript.svg"
+                  alt="JavaScript"
+                  className="w-6 h-6"
+                />
+                <span>JavaScript</span>
+              </div>
+              <div className="flex items-center gap-2 w-1/2 sm:w-auto">
+                <img
+                  src="../src/assets/cpp.svg"
+                  alt="C++"
+                  className="w-6 h-6"
+                />
+                <span>C++</span>
+              </div>
+            </div>
+            <div className="border-t border-gray-300"></div>
+            {/* Row 2 */}
+            <div className="flex flex-wrap justify-evenly lg:justify-evenly items-center gap-4 sm:gap-6">
+              <div className="flex items-center gap-2 w-1/2 sm:w-auto">
+                <img
+                  src="../src/assets/react.svg"
+                  alt="React"
+                  className="w-6 h-6"
+                />
+                <span>React</span>
+              </div>
+              <div className="flex items-center gap-2 w-1/2 sm:w-auto">
+                <img
+                  src="../src/assets/TailwindCSS.svg"
+                  alt="Tailwind CSS"
+                  className="w-6 h-6"
+                />
+                <span>Tailwind CSS</span>
+              </div>
+              <div className="flex items-center gap-2 w-1/2 sm:w-auto">
+                <img
+                  src="../src/assets/materialUI.svg"
+                  alt="Material UI"
+                  className="w-6 h-6"
+                />
+                <span>Material UI</span>
+              </div>
+            </div>
+            <div className="border-t border-gray-300"></div>
+            {/* Row 3 */}
+            <div className="flex flex-wrap justify-evenly lg:justify-between items-center gap-4 sm:gap-6">
+              <div className="flex items-center gap-2 w-1/2 sm:w-auto">
+                <img
+                  src="../src/assets/git.svg"
+                  alt="Git"
+                  className="w-6 h-6"
+                />
+                <span>Git/Github</span>
+              </div>
+              <div className="flex items-center gap-2 w-1/2 sm:w-auto">
+                <img
+                  src="../src/assets/illustrator.svg"
+                  alt="Illustrator"
+                  className="w-6 h-6"
+                />
+                <span>Illustrator</span>
+              </div>
+              <div className="flex items-center gap-2 w-1/2 sm:w-auto">
+                <img
+                  src="../src/assets/figma.svg"
+                  alt="Figma"
+                  className="w-6 h-6"
+                />
+                <span>Figma</span>
+              </div>
+              <div className="flex items-center gap-2 w-1/2 sm:w-auto">
+                <img
+                  src="../src/assets/photoshop.svg"
+                  alt="Photoshop"
+                  className="w-6 h-6"
+                />
+                <span>Photoshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

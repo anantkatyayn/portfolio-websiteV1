@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import Header from "./Components/Header";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Projects from "./Components/Projects";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <Header />
+      <section id="home" className="min-h-screen bg-gray-100">
+        <Home/>
+      </section>
+      <section id="about" className="min-h-screen bg-gray-100">
+        <About/>
+      </section>
+      <section id="projects" className="min-h-screen bg-gray-200">
+        <Projects/>
+      </section>
+      <section id="contact" className="min-h-screen bg-gray-300">
+        <h2 className="text-center text-3xl font-bold">Contact</h2>
+        <p className="text-center mt-4">This is the Contact section.</p>
+      </section>
+    </div>
+  );
+};
 
-export default App
+export default App;

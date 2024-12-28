@@ -6,7 +6,7 @@ const projects = [
     title: "MovieChowk",
     category: "Development",
     description: "Entertainment Database application",
-    image: "../src/assets/projectThumbnails/moviechowk.png",
+    image: "../../projectThumbnails/moviechowk.png",
     link: "https://moviechowk.netlify.app/",
   },
   {
@@ -14,7 +14,7 @@ const projects = [
     title: "PokeDex",
     category: "Development",
     description: "Pokemon Info Application",
-    image: "../src/assets/projectThumbnails/pokedex.png",
+    image: "../../projectThumbnails/pokedex.png",
     link: "https://pokedexv1anant.netlify.app",
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     title: "TimelyPro",
     category: "Design",
     description: "ERMS Application",
-    image: "../src/assets/projectThumbnails/timelypro.png",
+    image: "../../projectThumbnails/timelypro.png",
     link: "https://www.behance.net/gallery/194423893/Timely-Pro-ERMS-Application-case-study",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     title: "KafiKitaab",
     category: "Design",
     description: "Book Cafe Application",
-    image: "../src/assets/projectThumbnails/kafikitaab.png",
+    image: "../../projectThumbnails/kafikitaab.png",
     link: "https://www.behance.net/gallery/193465259/Kafi-Kitaab-book-cafe-mobile-application-casestudy",
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     title: "Jiffy",
     category: "Design",
     description: "Brand Identity",
-    image: "../src/assets/projectThumbnails/jiffy.png",
+    image: "../../projectThumbnails/jiffy.png",
     link: "https://www.behance.net/gallery/190938009/Jiffy-Logistics-Brand-Identity-board",
   },
   {
@@ -46,7 +46,7 @@ const projects = [
     title: "Design Portfolio",
     category: "Design",
     description: "My Design Portfolio",
-    image: "../src/assets/projectThumbnails/portfolio.png",
+    image: "../../projectThumbnails/portfolio.png",
     link: "https://www.behance.net/gallery/198313225/My-design-Portfolio",
   },
   {
@@ -54,7 +54,7 @@ const projects = [
     title: "KafiKitaab",
     category: "Design",
     description: "Book Cafe Application",
-    image: "../src/assets/projectThumbnails/kafikitaab.png",
+    image: "../../projectThumbnails/kafikitaab.png",
     link: "https://www.behance.net/gallery/193465259/Kafi-Kitaab-book-cafe-mobile-application-casestudy",
   },
   {
@@ -62,7 +62,7 @@ const projects = [
     title: "Jiffy",
     category: "Design",
     description: "Brand Identity",
-    image: "../src/assets/projectThumbnails/jiffy.png",
+    image: "../../projectThumbnails/jiffy.png",
     link: "https://www.behance.net/gallery/190938009/Jiffy-Logistics-Brand-Identity-board",
   },
   {
@@ -70,7 +70,7 @@ const projects = [
     title: "Design Portfolio",
     category: "Design",
     description: "My Design Portfolio",
-    image: "../src/assets/projectThumbnails/portfolio.png",
+    image: "../../projectThumbnails/portfolio.png",
     link: "https://www.behance.net/gallery/198313225/My-design-Portfolio",
   },
 ];

@@ -43,10 +43,10 @@ const ContactForm = () => {
     };
 
     try {
-      // const response = await axios.post(
-      //   "https://api.emailjs.com/api/v1.0/email/send",
-      //   data
-      // );
+      const response = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        data
+      );
       console.log("Message sent successfully");
       setToast({ message: "Message sent successfully!", type: "success" });
       resetFormState();

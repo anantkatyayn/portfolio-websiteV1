@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { toast, ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 import BGElements from "./BGElements";
-
+import CustomToast from "./CustomToast";
 const ContactForm = () => {
   const [formState, setFormState] = useState({
     name: "",
@@ -12,7 +12,7 @@ const ContactForm = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+  const [toast, setToast] = useState(null);
   const resetFormState = () => {
     setFormState({ name: "", email: "", subject: "", message: "" });
   };
@@ -43,26 +43,18 @@ const ContactForm = () => {
     };
 
     try {
-      const response = await axios.post(
-        "https://api.emailjs.com/api/v1.0/email/send",
-        data
-      );
+      // const response = await axios.post(
+      //   "https://api.emailjs.com/api/v1.0/email/send",
+      //   data
+      // );
       console.log("Message sent successfully");
-      toast.success("Message sent successfully!", {
-        position: "top-center",
-        autoClose: 3000,
-        className: "bg-green-500 text-white rounded shadow-lg z-9999",
-      });
-
+      setToast({ message: "Message sent successfully!", type: "success" });
       resetFormState();
     } catch (error) {
-      toast.error("Failed to send message. Please try again.", {
-        position: "top-center",
-        autoClose: 3000,
-        className: "bg-red-500 text-white rounded shadow-md",
-      });
+      setToast({ message: "Failed to send message. Please try again.", type: "error" });
     } finally {
       setIsSubmitting(false);
+      setTimeout(() => setToast(null), 3000);
     }
   };
 
@@ -179,7 +171,13 @@ const ContactForm = () => {
           </button>
         </form>
       </div>
-      <ToastContainer />
+      {toast && (
+        <CustomToast
+          message={toast.message}
+          type={toast.type}
+          onClose={() => setToast(null)}
+        />
+      )}
     </section>
   );
 };

@@ -1,15 +1,21 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import profileImage from "/cartoon dp without bg.png"; 
-import circlePattern1 from "/bg pattern.png"; 
-import circlePattern2 from "/Ellipse 21.png"; 
-import baseImage from "/bg pattern2.png"; 
+import profileImage from "/cartoon dp without bg.png";
+import circlePattern1 from "/bg pattern.png";
+import circlePattern2 from "/Ellipse 21.png";
+import baseImage from "/bg pattern2.png";
 import BGElementsBlue from "./BGElementsBlue";
 
 const Home = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="relative bg-[#f9f9f9] min-h-screen flex items-center overflow-hidden">
-      <BGElementsBlue/>
+      <BGElementsBlue />
       {/* Base Image */}
       <img
         src={baseImage}
@@ -34,7 +40,7 @@ const Home = () => {
         <div className="font-raleway text-center lg:text-left lg:w-1/2 relative mt-24 lg:mt-0">
           <h4 className="text-lg md:text-lg lg:text-xl font-medium text-gray-500">
             <Typewriter
-              words={['Designer', 'Developer', 'Artist']}
+              words={["Designer", "Developer", "Artist"]}
               loop={Infinity}
               cursor
               cursorStyle="|"
@@ -48,9 +54,14 @@ const Home = () => {
             <span className="text-[#313e8e]">Anant Katyayn</span>
           </h1>
           <p className="font-lato text-gray-600 mt-4 leading-relaxed  text-sm md:text-base lg:text-base">
-            I bring ideas to life through creativity and technology. With a passion for design, development, and art, I craft experiences that inspire and connect. Let’s create something extraordinary together.
+            I bring ideas to life through creativity and technology. With a
+            passion for design, development, and art, I craft experiences that
+            inspire and connect. Let’s create something extraordinary together.
           </p>
-          <button className="mt-6 px-6 py-3 border-2 border-[#313e8e] text-[#313e8e] font-semibold rounded-[32px] hover:bg-[#313e8e] hover:text-white transition">
+          <button
+            onClick={()=>scrollToSection("contact")}
+            className="mt-6 px-6 py-3 border-2 border-[#313e8e] text-[#313e8e] font-semibold rounded-[32px] hover:bg-[#313e8e] hover:text-white transition"
+          >
             GET IN TOUCH
           </button>
         </div>
@@ -69,7 +80,7 @@ const Home = () => {
             <img
               src={profileImage}
               alt="Anant Katyayn"
-              className="relative z-5 -sm:mb-[2px] max-w-[300px] md:max-w-[450px] lg:max-w-[600px] drop-shadow-[0_35px_35px_rgba(49,62,142,0.25)]"
+              className="relative z-[5] -sm:mb-[2px] max-w-[300px] md:max-w-[450px] lg:max-w-[600px] drop-shadow-[0_35px_35px_rgba(49,62,142,0.25)]"
             />
           </div>
         </div>

@@ -67,7 +67,7 @@ const Footer = () => {
             Katyayn.
           </p>
           <p className="text-sm text-gray-500 mt-2">
-          Version: {packageJson.version}
+          v{packageJson.version}
           </p>
 
         </div>

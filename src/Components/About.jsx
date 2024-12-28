@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../public/AnantKatyaynResume.pdf";
+import CV from "/AnantKatyaynResume.pdf";
 
 const About = () => {
   return (
@@ -112,7 +112,7 @@ const About = () => {
             <div className="flex flex-wrap justify-evenly lg:justify-between items-center gap-4 ">
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../HTML.svg"
+                  src="/HTML.svg"
                   alt="HTML5"
                   className="w-6 h-6"
                 />
@@ -120,7 +120,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../css.svg"
+                  src="/css.svg"
                   alt="CSS3"
                   className="w-6 h-6"
                 />
@@ -128,7 +128,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../javascript.svg"
+                  src="/javascript.svg"
                   alt="JavaScript"
                   className="w-6 h-6"
                 />
@@ -136,7 +136,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../cpp.svg"
+                  src="/cpp.svg"
                   alt="C++"
                   className="w-6 h-6"
                 />
@@ -148,7 +148,7 @@ const About = () => {
             <div className="flex flex-wrap justify-evenly lg:justify-evenly items-center gap-4 sm:gap-6">
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../react.svg"
+                  src="/react.svg"
                   alt="React"
                   className="w-6 h-6"
                 />
@@ -156,7 +156,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../TailwindCSS.svg"
+                  src="/TailwindCSS.svg"
                   alt="Tailwind CSS"
                   className="w-6 h-6"
                 />
@@ -164,7 +164,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../materialUI.svg"
+                  src="/materialUI.svg"
                   alt="Material UI"
                   className="w-6 h-6"
                 />
@@ -176,7 +176,7 @@ const About = () => {
             <div className="flex flex-wrap justify-evenly lg:justify-between items-center gap-4 sm:gap-6">
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../git.svg"
+                  src="/git.svg"
                   alt="Git"
                   className="w-6 h-6"
                 />
@@ -184,7 +184,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../illustrator.svg"
+                  src="/illustrator.svg"
                   alt="Illustrator"
                   className="w-6 h-6"
                 />
@@ -192,7 +192,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../figma.svg"
+                  src="/figma.svg"
                   alt="Figma"
                   className="w-6 h-6"
                 />
@@ -200,7 +200,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../photoshop.svg"
+                  src="/photoshop.svg"
                   alt="Photoshop"
                   className="w-6 h-6"
                 />

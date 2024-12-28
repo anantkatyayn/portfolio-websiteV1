@@ -3,6 +3,8 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
+import ContactForm from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -17,10 +19,10 @@ const App = () => {
       <section id="projects" className="min-h-screen bg-gray-200">
         <Projects/>
       </section>
-      <section id="contact" className="min-h-screen bg-gray-300">
-        <h2 className="text-center text-3xl font-bold">Contact</h2>
-        <p className="text-center mt-4">This is the Contact section.</p>
+      <section id="contact" className="min-h-screen ">
+        <ContactForm/>
       </section>
+      <Footer/>
     </div>
   );
 };

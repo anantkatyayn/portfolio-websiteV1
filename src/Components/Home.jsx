@@ -1,9 +1,9 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import profileImage from "../../public/cartoon dp without bg.png"; 
-import circlePattern1 from "../../public/bg pattern.png"; 
-import circlePattern2 from "../../public/Ellipse 21.png"; 
-import baseImage from "../../public/bg pattern.png"; 
+import profileImage from "/cartoon dp without bg.png"; 
+import circlePattern1 from "/bg pattern.png"; 
+import circlePattern2 from "/Ellipse 21.png"; 
+import baseImage from "/bg pattern2.png"; 
 
 const Home = () => {
   return (

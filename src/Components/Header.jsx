@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../../public/anant infinity logomark.png";
+import logo from "/anant infinity logomark.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

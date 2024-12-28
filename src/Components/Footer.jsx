@@ -1,6 +1,11 @@
-import { FaBehance, FaGithub, FaLinkedin} from "react-icons/fa";
+import { FaBehance, FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdMail } from "react-icons/md";
 
 const Footer = () => {
+  const openMailClient = () => {
+    window.location.href =
+      "mailto:anantkatyayn112@gmail.com?subject=Hello&body=Hi Anant, I wanted to reach out.";
+  };
   return (
     <footer className="bg-[#f9f9f9] text-gray-700 py-12">
       <div className="container mx-auto px-6 lg:px-[240px]">
@@ -8,7 +13,9 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between items-center mb-8">
           {/* Brand Info */}
           <div className="mb-6 lg:mb-0 lg:w-1/2 text-center lg:text-left">
-            <h2 className="text-3xl font-extrabold text-gray-800">Anant Katyayn</h2>
+            <h2 className="text-3xl font-extrabold text-gray-800">
+              Anant Katyayn
+            </h2>
             <p className="text-sm text-gray-500 mt-2">
               Crafting beautiful solutions.
             </p>
@@ -55,7 +62,9 @@ const Footer = () => {
             © {new Date().getFullYear()}. All Rights Reserved.
           </p>
           <p className="text-sm text-gray-500 mt-2">
-            Designed & Built with <span className="text-red-500 font-raleway">&hearts;</span> by Anant Katyayn.
+            Designed & Built with{" "}
+            <span className="text-red-500 font-raleway">&hearts;</span> by Anant
+            Katyayn.
           </p>
         </div>
       </div>

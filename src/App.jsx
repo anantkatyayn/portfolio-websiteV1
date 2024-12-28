@@ -23,6 +23,7 @@ const App = () => {
         <ContactForm/>
       </section>
       <Footer/>
+      
     </div>
   );
 };

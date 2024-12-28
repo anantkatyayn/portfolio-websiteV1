@@ -13,7 +13,7 @@ const Header = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false); // Close the menu after clicking a link
+      setIsMenuOpen(false); 
     }
   };
 

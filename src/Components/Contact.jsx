@@ -12,7 +12,10 @@ const ContactForm = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [responseMessage, setResponseMessage] = useState("");
+  
+  const resetFormState = () => {
+    setFormState({ name: "", email: "", subject: "", message: "" });
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -21,6 +24,10 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Prevent multiple submissions
+    if (isSubmitting) return;
+
     setIsSubmitting(true);
 
     const data = {
@@ -44,14 +51,17 @@ const ContactForm = () => {
       toast.success("Message sent successfully!", {
         position: "top-center",
         autoClose: 3000,
+        className: "bg-green-500 text-white rounded shadow-lg z-9999",
       });
-      setIsSubmitting(false);
-      setFormState({ name: "", email: "", subject: "", message: "" }); // Reset form
+
+      resetFormState();
     } catch (error) {
-        toast.error("Failed to send message. Please try again.", {
-            position: "top-center",
-            autoClose: 3000,
-          });
+      toast.error("Failed to send message. Please try again.", {
+        position: "top-center",
+        autoClose: 3000,
+        className: "bg-red-500 text-white rounded shadow-md",
+      });
+    } finally {
       setIsSubmitting(false);
     }
   };
@@ -61,12 +71,15 @@ const ContactForm = () => {
       id="contact"
       className="bg-[#e1e1e1] z-20 text-[#2d2d2d] font-raleway relative pt-[96px] py-16"
     >
-      <BGElements/>
+      <BGElements />
 
       <div className="container mx-auto px-6 lg:px-[240px] text-center">
         <h2 className="text-3xl font-bold mb-3">Let's Work Together</h2>
-        <p className="text-lg mb-12 font-regular ">
+        <p className="text-lg mb-1 font-regular ">
           Have a question, a project, or just want to say hi? Drop me a message!
+        </p>
+        <p className="text-sm mb-12 font-regular ">
+          or mail me at <span className="font-semibold">anantkatyayn112@gmail.com</span>!
         </p>
 
         <form
@@ -156,15 +169,17 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full py-3 bg-black text-white font-raleway shadow-lg hover:bg-gray-800 hover:shadow-xl transition"
+            className={`w-full py-3 rounded-md shadow-md transition ${
+              isSubmitting
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-black text-white hover:bg-[#0D0F1C] hover:shadow-lg"
+            }`}
           >
             {isSubmitting ? "Sending..." : "Send Message"}
           </button>
         </form>
-        {responseMessage && <p className="mt-6 text-sm">{responseMessage}</p>}
       </div>
       <ToastContainer />
-
     </section>
   );
 };

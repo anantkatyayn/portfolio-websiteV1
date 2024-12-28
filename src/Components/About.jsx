@@ -3,9 +3,16 @@ import CV from "/AnantKatyaynResume.pdf";
 import BGElements from "./BGElements";
 
 const About = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative bg-[#e1e1e1] z-20 -mt-2 pt-[72px] lg:pt-[96px] pb-20 flex items-center lg:h-auto overflow-hidden">
-      <BGElements/>
+      <BGElements />
 
       <div className="container mx-auto px-6 lg:px-[240px] z-20 py-16 flex flex-col gap-12">
         {/* First Row: Why Hire Me and My Skills */}
@@ -22,7 +29,10 @@ const About = () => {
               and connects with your audience.
             </p>
             <div className="flex justify-center lg:justify-start gap-4">
-              <button className="bg-black text-white px-6 py-3 hover:bg-gray-800 transition">
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="bg-black text-white px-6 py-3 hover:bg-gray-800 transition"
+              >
                 HIRE ME
               </button>
               <a href={CV} download>
@@ -40,29 +50,29 @@ const About = () => {
               {/* Skill 1 */}
               <div>
                 <div className="flex justify-between">
-                  <span className="text-gray-700 font-semibold font-lato">FrontEnd Development</span>
-                  
+                  <span className="text-gray-700 font-semibold font-lato">
+                    FrontEnd Development
+                  </span>
                 </div>
-                <div className="bg-[#6f6f6f] h-[1.5px] rounded-full mt-2">
-                </div>
+                <div className="bg-[#6f6f6f] h-[1.5px] rounded-full mt-2"></div>
               </div>
               {/* Skill 2 */}
               <div>
                 <div className="flex justify-between">
-                  <span className="text-gray-700 font-semibold font-lato">UX Design</span>
-                  
+                  <span className="text-gray-700 font-semibold font-lato">
+                    UX Design
+                  </span>
                 </div>
-                <div className="bg-[#6f6f6f] h-[1.5px] rounded-full mt-2">
-                </div>
+                <div className="bg-[#6f6f6f] h-[1.5px] rounded-full mt-2"></div>
               </div>
               {/* Skill 3 */}
               <div>
                 <div className="flex justify-between">
-                  <span className="text-gray-700 font-semibold font-lato">Brand Identity Design</span>
-                  
+                  <span className="text-gray-700 font-semibold font-lato">
+                    Brand Identity Design
+                  </span>
                 </div>
-                <div className="bg-[#6f6f6f] h-[1.5px] rounded-full mt-2">
-                </div>
+                <div className="bg-[#6f6f6f] h-[1.5px] rounded-full mt-2"></div>
               </div>
             </div>
           </div>
@@ -77,19 +87,11 @@ const About = () => {
             {/* Row 1 */}
             <div className="flex flex-wrap justify-evenly lg:justify-between items-center gap-4 ">
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
-                <img
-                  src="/HTML.svg"
-                  alt="HTML5"
-                  className="w-6 h-6"
-                />
+                <img src="/HTML.svg" alt="HTML5" className="w-6 h-6" />
                 <span>HTML</span>
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
-                <img
-                  src="/css.svg"
-                  alt="CSS3"
-                  className="w-6 h-6"
-                />
+                <img src="/css.svg" alt="CSS3" className="w-6 h-6" />
                 <span>CSS</span>
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
@@ -101,11 +103,7 @@ const About = () => {
                 <span>JavaScript</span>
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
-                <img
-                  src="/cpp.svg"
-                  alt="C++"
-                  className="w-6 h-6"
-                />
+                <img src="/cpp.svg" alt="C++" className="w-6 h-6" />
                 <span>C++</span>
               </div>
             </div>
@@ -113,11 +111,7 @@ const About = () => {
             {/* Row 2 */}
             <div className="flex flex-wrap justify-evenly lg:justify-evenly items-center gap-4 sm:gap-6">
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
-                <img
-                  src="/react.svg"
-                  alt="React"
-                  className="w-6 h-6"
-                />
+                <img src="/react.svg" alt="React" className="w-6 h-6" />
                 <span>React</span>
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
@@ -141,11 +135,7 @@ const About = () => {
             {/* Row 3 */}
             <div className="flex flex-wrap justify-evenly lg:justify-between items-center gap-4 sm:gap-6">
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
-                <img
-                  src="/git.svg"
-                  alt="Git"
-                  className="w-6 h-6"
-                />
+                <img src="/git.svg" alt="Git" className="w-6 h-6" />
                 <span>Git/Github</span>
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
@@ -157,19 +147,11 @@ const About = () => {
                 <span>Illustrator</span>
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
-                <img
-                  src="/figma.svg"
-                  alt="Figma"
-                  className="w-6 h-6"
-                />
+                <img src="/figma.svg" alt="Figma" className="w-6 h-6" />
                 <span>Figma</span>
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
-                <img
-                  src="/photoshop.svg"
-                  alt="Photoshop"
-                  className="w-6 h-6"
-                />
+                <img src="/photoshop.svg" alt="Photoshop" className="w-6 h-6" />
                 <span>Photoshop</span>
               </div>
             </div>

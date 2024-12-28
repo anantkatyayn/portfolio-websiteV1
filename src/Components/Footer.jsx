@@ -1,5 +1,5 @@
 import { FaBehance, FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdMail } from "react-icons/md";
+import packageJson from "../../package.json";
 
 const Footer = () => {
   const openMailClient = () => {
@@ -66,6 +66,10 @@ const Footer = () => {
             <span className="text-red-500 font-raleway">&hearts;</span> by Anant
             Katyayn.
           </p>
+          <p className="text-sm text-gray-500 mt-2">
+          Version: {packageJson.version}
+          </p>
+
         </div>
       </div>
     </footer>

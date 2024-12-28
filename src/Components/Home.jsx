@@ -67,7 +67,7 @@ const Home = () => {
             <img
               src={profileImage}
               alt="Anant Katyayn"
-              className="relative z-5 max-w-[300px] md:max-w-[450px] lg:max-w-[600px] drop-shadow-[0_35px_35px_rgba(49,62,142,0.25)]"
+              className="relative z-5 -sm:mb-[2px] max-w-[300px] md:max-w-[450px] lg:max-w-[600px] drop-shadow-[0_35px_35px_rgba(49,62,142,0.25)]"
             />
           </div>
         </div>

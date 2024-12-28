@@ -112,7 +112,7 @@ const About = () => {
             <div className="flex flex-wrap justify-evenly lg:justify-between items-center gap-4 ">
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../src/assets/HTML.svg"
+                  src="../HTML.svg"
                   alt="HTML5"
                   className="w-6 h-6"
                 />
@@ -120,7 +120,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../src/assets/css.svg"
+                  src="../css.svg"
                   alt="CSS3"
                   className="w-6 h-6"
                 />
@@ -128,7 +128,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../src/assets/javascript.svg"
+                  src="../javascript.svg"
                   alt="JavaScript"
                   className="w-6 h-6"
                 />
@@ -136,7 +136,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="../src/assets/cpp.svg"
+                  src="../cpp.svg"
                   alt="C++"
                   className="w-6 h-6"
                 />

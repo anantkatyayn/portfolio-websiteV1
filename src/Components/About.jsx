@@ -74,31 +74,28 @@ const About = () => {
               {/* Skill 1 */}
               <div>
                 <div className="flex justify-between">
-                  <span className="text-gray-700">UX Design</span>
-                  <span className="text-gray-700">92%</span>
+                  <span className="text-gray-700 font-semibold font-lato">FrontEnd Development</span>
+                  
                 </div>
-                <div className="bg-gray-300 h-2 rounded-full mt-2">
-                  <div className="bg-[#2d2d2d] h-full rounded-full w-[92%]"></div>
+                <div className="bg-[#6f6f6f] h-[1.5px] rounded-full mt-2">
                 </div>
               </div>
               {/* Skill 2 */}
               <div>
                 <div className="flex justify-between">
-                  <span className="text-gray-700">Brand Identity Design</span>
-                  <span className="text-gray-700">92%</span>
+                  <span className="text-gray-700 font-semibold font-lato">UX Design</span>
+                  
                 </div>
-                <div className="bg-gray-300 h-2 rounded-full mt-2">
-                  <div className="bg-[#2d2d2d] h-full rounded-full w-[92%]"></div>
+                <div className="bg-[#6f6f6f] h-[1.5px] rounded-full mt-2">
                 </div>
               </div>
               {/* Skill 3 */}
               <div>
                 <div className="flex justify-between">
-                  <span className="text-gray-700">FrontEnd Development</span>
-                  <span className="text-gray-700">85%</span>
+                  <span className="text-gray-700 font-semibold font-lato">Brand Identity Design</span>
+                  
                 </div>
-                <div className="bg-gray-300 h-2 rounded-full mt-2">
-                  <div className="bg-[#2d2d2d] h-full rounded-full w-[85%]"></div>
+                <div className="bg-[#6f6f6f] h-[1.5px] rounded-full mt-2">
                 </div>
               </div>
             </div>

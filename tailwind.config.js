@@ -18,9 +18,17 @@ export default {
           '75%': { transform: 'translate(15px, 5px)' },
           '100%': { transform: 'translate(0px, 0px)' },
         },
+        "elliptical-motion": {
+          "0%": { transform: "translate(0%, 0%)" },
+          "25%": { transform: "translate(25%, 50%)" },
+          "50%": { transform: "translate(50%, 0%)" },
+          "75%": { transform: "translate(25%, -50%)" },
+          "100%": { transform: "translate(0%, 0%)" },
+        },
       },
       animation: {
         'random-motion': 'random-motion 10s ease-in-out infinite',
+        "elliptical-motion": "elliptical-motion 10s infinite ease-in-out",
       },
     },
   },

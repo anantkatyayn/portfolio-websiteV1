@@ -18,7 +18,8 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed w-full bg-[#f9f9f9] z-50">
+    <header className="fixed w-full bg-[#f9f9f9] z-50 ">
+
       <div className="container mx-auto flex items-center justify-between py-4 px-6 md:px-12 lg:px-[240px]">
         {/* Logo */}
         <div

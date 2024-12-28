@@ -1,45 +1,11 @@
 import React from "react";
 import CV from "/AnantKatyaynResume.pdf";
+import BGElements from "./BGElements";
 
 const About = () => {
   return (
     <section className="relative bg-[#e1e1e1] z-20 -mt-2 pt-[72px] lg:pt-[96px] pb-20 flex items-center lg:h-auto overflow-hidden">
-      {/* Subtle Moving Outlined Elements */}
-      <div className="absolute left-10 top-10 animate-random-motion">
-        <div className="w-8 h-8 border-2 border-white rounded-full"></div>{" "}
-        {/* Circle */}
-      </div>
-      <div className="absolute right-20 top-16 animate-random-motion">
-        <div className="w-6 h-6 border-2 border-white transform rotate-45"></div>{" "}
-        {/* Diamond */}
-      </div>
-      <div className="absolute left-20 bottom-10 animate-random-motion">
-        <div className="w-8 h-8 border-2 border-white transform rotate-45"></div>{" "}
-        {/* Triangle */}
-      </div>
-      <div className="absolute right-10 bottom-20 animate-random-motion">
-        <div className="w-6 h-6 border-2 border-white flex items-center justify-center">
-          <span className="text-white text-sm font-bold transform rotate-45">
-            +
-          </span>{" "}
-          {/* Plus */}
-        </div>
-      </div>
-      <div className="absolute left-[40%] top-[20%] animate-random-motion">
-        <div className="w-5 h-5 border-2 border-white rounded-full"></div>{" "}
-        {/* Small Circle */}
-      </div>
-      <div className="absolute right-[30%] top-[30%] animate-random-motion">
-        <div className="w-7 h-7 border-2 border-white"></div> {/* Square */}
-      </div>
-      <div className="absolute left-[10%] top-[50%] animate-random-motion">
-        <div className="w-6 h-6 border-2 border-white transform rotate-45"></div>{" "}
-        {/* Diamond */}
-      </div>
-      <div className="absolute right-[10%] bottom-[40%] animate-random-motion">
-        <div className="w-5 h-5 border-2 border-white rounded-full"></div>{" "}
-        {/* Circle */}
-      </div>
+      <BGElements/>
 
       <div className="container mx-auto px-6 lg:px-[240px] z-20 py-16 flex flex-col gap-12">
         {/* First Row: Why Hire Me and My Skills */}

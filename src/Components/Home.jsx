@@ -4,10 +4,12 @@ import profileImage from "/cartoon dp without bg.png";
 import circlePattern1 from "/bg pattern.png"; 
 import circlePattern2 from "/Ellipse 21.png"; 
 import baseImage from "/bg pattern2.png"; 
+import BGElementsBlue from "./BGElementsBlue";
 
 const Home = () => {
   return (
     <section className="relative bg-[#f9f9f9] min-h-screen flex items-center overflow-hidden">
+      <BGElementsBlue/>
       {/* Base Image */}
       <img
         src={baseImage}

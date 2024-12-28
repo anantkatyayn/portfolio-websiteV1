@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BGElements from "./BGElements";
 
 const ContactForm = () => {
   const [formState, setFormState] = useState({
@@ -58,44 +59,9 @@ const ContactForm = () => {
   return (
     <section
       id="contact"
-      className="bg-[#e1e1e1] z-20 text-[#2d2d2d] font-raleway pt-[96px] py-16"
+      className="bg-[#e1e1e1] z-20 text-[#2d2d2d] font-raleway relative pt-[96px] py-16"
     >
-      {/* Subtle Moving Outlined Elements */}
-      <div className="absolute left-10 top-10 animate-random-motion">
-        <div className="w-8 h-8 border-2 border-white rounded-full"></div>{" "}
-        {/* Circle */}
-      </div>
-      <div className="absolute right-20 top-16 animate-random-motion">
-        <div className="w-6 h-6 border-2 border-white transform rotate-45"></div>{" "}
-        {/* Diamond */}
-      </div>
-      <div className="absolute left-20 bottom-10 animate-random-motion">
-        <div className="w-8 h-8 border-2 border-white transform rotate-45"></div>{" "}
-        {/* Triangle */}
-      </div>
-      <div className="absolute right-10 bottom-20 animate-random-motion">
-        <div className="w-6 h-6 border-2 border-white flex items-center justify-center">
-          <span className="text-white text-sm font-bold transform rotate-45">
-            +
-          </span>{" "}
-          {/* Plus */}
-        </div>
-      </div>
-      <div className="absolute left-[40%] top-[20%] animate-random-motion">
-        <div className="w-5 h-5 border-2 border-white rounded-full"></div>{" "}
-        {/* Small Circle */}
-      </div>
-      <div className="absolute right-[30%] top-[30%] animate-random-motion">
-        <div className="w-7 h-7 border-2 border-white"></div> {/* Square */}
-      </div>
-      <div className="absolute left-[10%] top-[50%] animate-random-motion">
-        <div className="w-6 h-6 border-2 border-white transform rotate-45"></div>{" "}
-        {/* Diamond */}
-      </div>
-      <div className="absolute right-[10%] bottom-[40%] animate-random-motion">
-        <div className="w-5 h-5 border-2 border-white rounded-full"></div>{" "}
-        {/* Circle */}
-      </div>
+      <BGElements/>
 
       <div className="container mx-auto px-6 lg:px-[240px] text-center">
         <h2 className="text-3xl font-bold mb-3">Let's Work Together</h2>
@@ -182,7 +148,7 @@ const ContactForm = () => {
               value={formState.message}
               onChange={handleInputChange}
               placeholder="Enter your message"
-              className="w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 max-h-[300px] border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
             ></textarea>
           </div>
 

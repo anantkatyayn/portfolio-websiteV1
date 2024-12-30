@@ -124,11 +124,11 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 w-1/2 sm:w-auto">
                 <img
-                  src="/materialUI.svg"
+                  src="/shadcn-ui-seeklogo.svg"
                   alt="Material UI"
                   className="w-6 h-6"
                 />
-                <span>Material UI</span>
+                <span>Shadcn/ui</span>
               </div>
             </div>
             <div className="border-t border-gray-300"></div>

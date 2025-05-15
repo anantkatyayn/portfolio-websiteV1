@@ -3,6 +3,14 @@ import React, { useState } from "react";
 const projects = [
   {
     id: 1,
+    title: "FinMan",
+    category: "Development",
+    description: "Finance Manager Application",
+    image: "../../projectThumbnails/finman.jpg",
+    link: "https://finman-anant.netlify.app/",
+  },
+  {
+    id: 2,
     title: "MovieChowk",
     category: "Development",
     description: "Entertainment Database application",
@@ -10,7 +18,7 @@ const projects = [
     link: "https://moviechowk.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "PokeDex",
     category: "Development",
     description: "Pokemon Info Application",
@@ -18,7 +26,7 @@ const projects = [
     link: "https://pokedexv1anant.netlify.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "TimelyPro",
     category: "Design",
     description: "ERMS Application",
@@ -26,7 +34,7 @@ const projects = [
     link: "https://www.behance.net/gallery/194423893/Timely-Pro-ERMS-Application-case-study",
   },
   {
-    id: 4,
+    id: 5,
     title: "KafiKitaab",
     category: "Design",
     description: "Book Cafe Application",
@@ -34,21 +42,21 @@ const projects = [
     link: "https://www.behance.net/gallery/193465259/Kafi-Kitaab-book-cafe-mobile-application-casestudy",
   },
   {
-    id: 5,
+    id: 6,
     title: "Jiffy",
     category: "Design",
     description: "Brand Identity",
     image: "../../projectThumbnails/jiffy.png",
     link: "https://www.behance.net/gallery/190938009/Jiffy-Logistics-Brand-Identity-board",
   },
-  {
-    id: 6,
-    title: "Design Portfolio",
-    category: "Design",
-    description: "My Design Portfolio",
-    image: "../../projectThumbnails/portfolio.png",
-    link: "https://www.behance.net/gallery/198313225/My-design-Portfolio",
-  },
+  // {
+  //   id: 6,
+  //   title: "Design Portfolio",
+  //   category: "Design",
+  //   description: "My Design Portfolio",
+  //   image: "../../projectThumbnails/portfolio.png",
+  //   link: "https://www.behance.net/gallery/198313225/My-design-Portfolio",
+  // },
   // {
   //   id: 7,
   //   title: "KafiKitaab",

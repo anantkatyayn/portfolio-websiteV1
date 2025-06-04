@@ -140,9 +140,9 @@ const Projects = () => {
                     🔗
                   </div>
                   {/* Tooltip */}
-                  <div className="absolute right-full top-12 -translate-y-1/2 pr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="w-[130px] absolute right-full top-5 -translate-y-1/2 pr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="bg-black text-white text-xs px-2 py-1 rounded shadow-lg">
-                      Opens in new tab
+                      Opens in a new tab
                     </div>
                   </div>
                 </div>

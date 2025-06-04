@@ -27,6 +27,14 @@ const projects = [
   },
   {
     id: 4,
+    title: "The Dark Reality E-Comic",
+    category: "Design",
+    description: "First look of e-comic The Dark Reality",
+    image: "../../projectThumbnails/e-comic-thumbnail.png",
+    link: "https://www.behance.net/gallery/227427063/The-Dark-Reality-E-Comic-first-look",
+  },
+  {
+    id: 5,
     title: "TimelyPro",
     category: "Design",
     description: "ERMS Application",
@@ -34,21 +42,21 @@ const projects = [
     link: "https://www.behance.net/gallery/194423893/Timely-Pro-ERMS-Application-case-study",
   },
   {
-    id: 5,
+    id: 6,
     title: "KafiKitaab",
     category: "Design",
     description: "Book Cafe Application",
     image: "../../projectThumbnails/kafikitaab.png",
     link: "https://www.behance.net/gallery/193465259/Kafi-Kitaab-book-cafe-mobile-application-casestudy",
   },
-  {
-    id: 6,
-    title: "Jiffy",
-    category: "Design",
-    description: "Brand Identity",
-    image: "../../projectThumbnails/jiffy.png",
-    link: "https://www.behance.net/gallery/190938009/Jiffy-Logistics-Brand-Identity-board",
-  },
+  // {
+  //   id: 6,
+  //   title: "Jiffy",
+  //   category: "Design",
+  //   description: "Brand Identity",
+  //   image: "../../projectThumbnails/jiffy.png",
+  //   link: "https://www.behance.net/gallery/190938009/Jiffy-Logistics-Brand-Identity-board",
+  // },
   // {
   //   id: 6,
   //   title: "Design Portfolio",
@@ -125,6 +133,21 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="relative group block overflow-hidden rounded-xl shadow-lg transform transition hover:scale-105"
             >
+              {/* Redirection Icon with Tooltip */}
+              <div className="absolute top-3 right-3 z-10">
+                <div className="relative group">
+                  <div className="bg-white p-1 rounded-full shadow-md">
+                    🔗
+                  </div>
+                  {/* Tooltip */}
+                  <div className="absolute right-full top-12 -translate-y-1/2 pr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="bg-black text-white text-xs px-2 py-1 rounded shadow-lg">
+                      Opens in new tab
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Background Image */}
               <img
                 src={project.image}

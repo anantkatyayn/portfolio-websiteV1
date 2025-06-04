@@ -69,7 +69,7 @@ const About = () => {
               <div>
                 <div className="flex justify-between">
                   <span className="text-gray-700 font-semibold font-lato">
-                    Brand Identity Design
+                    Graphic Design
                   </span>
                 </div>
                 <div className="bg-[#6f6f6f] h-[1.5px] rounded-full mt-2"></div>
